@@ -23,26 +23,26 @@ function App() {
           <input type="text" onChange={FormHandler} name="email"></input><br/>
       </div>
       <div className="form-group">
-          <label htmlFor="occupation" className="form-label">Occupation</label><br/>
           <select onChange={FormHandler} name="occupation" className='form-select'>
+            <option selected disabled>Occupation</option>
             <option>Employee</option>
             <option>Student</option>
             <option>Retired</option>
           </select>
       </div>
       <div className="form-group">
-        <label htmlFor="gender" className="form-label">Gender</label><br/>
+        <label htmlFor="gender" className="form-label">Gender</label>
         <div>
-          <input type="radio" value="male" name="gender" onChange={FormHandler}></input>
           <label htmlFor="male">Male</label>
-        </div>
-        <div>
           <input type="radio" value="male" name="gender" onChange={FormHandler}></input>
-          <label htmlFor="female">Female</label>
         </div>
         <div>
-          <input type="radio" value="other" name="gender" onChange={FormHandler}></input>
+          <label htmlFor="female">Female</label>
+          <input type="radio" value="male" name="gender" onChange={FormHandler}></input>
+        </div>
+        <div>
           <label htmlFor="other">Other</label>
+          <input type="radio" value="other" name="gender" onChange={FormHandler}></input>
         </div>
       </div>
       <div className="form-group">
